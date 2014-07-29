@@ -1,0 +1,119 @@
+body {
+  background-image: url("perdy.jpg");
+  background-size:100%;
+  font-family:'Raleway', sans-serif;
+}
+
+  .container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+
+.container h1 {
+  font-size: 17pt;
+
+}
+
+#noteform {
+  background-color :white;
+  opacity: 0.8;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.notewrapper {
+  background-color: white;
+  opacity: 0.8;
+
+
+
+}
+
+
+nav ul {
+ float:right;
+
+ margin-right: 50px;
+display: inline-block;
+vertical-align: top;
+
+}
+
+
+
+
+nav ul li {
+
+  display: inline;
+  font-size: 30px;
+  font-color: white;
+}
+
+
+nav ul li:nth-child(1) {
+  margin-right: 20px;
+}
+
+nav ul li a:visited, a:link {
+  color: white;
+  text-decoration: none;
+}
+
+#locket {
+  display: inline;
+}
+
+
+#entryheading {
+
+  color:white;
+  font-size:100px;
+  background-color: black;
+  opacity: 0.8;
+
+}
+
+#sign-in, #sign-up {
+  background-color: white;
+}
+
+
+form label {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.errors {
+  color: red;
+}
+
+form.quirks {
+  display: inline-block;
+}
+
+.submit {
+  text-align: center;
+}
+
+.label {
+  font-weight: bold;
+  float: left;
+  text-align: right;
+  margin-right: 20px;
+  width: 200px;
+}
+
+.container a:link, a:active, a:visited {
+  color: purple;
+  text-decoration: none;
+}
+
+.container a:hover {
+  color: white;
+}

@@ -1,0 +1,15 @@
+<div class="container">
+	<form action="/note/<%=@note.id%>" method="POST">
+
+<h3>Edit Note</h3>
+<br><textarea name="to" placeholder="to"><%=@note.to%> </textarea>
+<br><textarea name="content" placeholder="content"><%=@note.content%> </textarea>
+  
+  <input type="hidden" name="_method" value="patch">
+  <br><input type="submit" value="submit!">
+
+</form>
+
+ <li> <a href="/delete/note/<%=@note.id%>"> Delete Note</a> </li>
+
+</div>
