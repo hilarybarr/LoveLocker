@@ -1,6 +1,7 @@
 body {
   background-image: url("perdy.jpg");
   background-size:100%;
+  background-attachment: fixed;
   font-family:'Raleway', sans-serif;
 }
 
