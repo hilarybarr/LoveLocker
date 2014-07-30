@@ -1,0 +1,66 @@
+
+
+
+</br></br>
+
+
+
+<% if current_user != nil %>
+
+
+ <div class="container">
+  <form action="/notes/new" method="POST" id="noteform">
+   <h1> Welcome, <%=current_user.name.camelcase%>!</h1>
+  <h3>Add a Note</h3>
+   <br><textarea name="to" placeholder="To" cols="40" rows="2"></textarea>
+  <br><textarea name="content" cols="40" rows="10" placeholder="Content"></textarea>
+  <br><input type="submit" value="submit!">
+
+</form>
+
+ 
+
+
+</br></br></br>
+
+    <h1 > Notes: </h1>
+    <% @notes.each do |note| %>
+
+    <div class="notewrapper">
+
+    </br>
+         To: <%= note.to %> </br>
+
+         Time:<%= note.created_at %> </br>
+         Note:<%= note.content %> </br>
+         <img src="http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons-256/purple-white-pearls-icons-business/085326-purple-white-pearl-icon-business-lock-heart.png" alt="Smiley face" height="100px" width="100px">
+         
+         <% note.comments.each do |comment|  %> 
+           <%= comment.content %>
+          <%end%>
+        </br>
+      
+     <a href="/note/<%=note.id%>"> Edit </a> </br>
+     <a href="/delete/note/<%=note.id%>"> Delete </a>
+   </div>
+ </br></br>
+    <%end%>
+  
+    </br>
+    </br>
+
+
+
+
+
+
+
+
+<%end%>
+
+
+</div>
+
+
+
+
