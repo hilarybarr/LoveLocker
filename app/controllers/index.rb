@@ -1,4 +1,6 @@
-
+after do
+  ActiveRecord::Base.connection.close
+end
 
 enable 'sessions'
 
